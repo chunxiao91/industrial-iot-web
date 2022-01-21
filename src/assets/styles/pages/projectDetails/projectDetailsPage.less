@@ -1,0 +1,52 @@
+.projectDetails{
+    // 项目详情页
+    .project_details_page{
+        height: 100%;
+        background-color: @background-color;
+        padding: 30px 50px;
+        overflow: auto;
+        .details_title{
+            width:800px;
+            padding-left: 0px;
+            border-bottom: 1px solid @border-color;
+        }
+        .operation_button {
+            padding: 15px 0;
+            .ant-btn{
+                margin-right: 20px;
+            }
+        }
+        .ant-alert{
+            width: 400px;
+            margin-bottom: 20px;
+        }
+    }
+
+    // 产品详情页
+    .product-list-left {
+        .products_list{
+            min-height: 100px;
+        }
+        .projectDetails-row{
+            display: flex;
+            flex-direction: column;
+            .ant-btn{
+                margin:10px 0;
+            }
+        }
+    }
+
+    .product-list-container{
+        height: 100%;
+    }
+
+}
+
+    // 产品复用弹窗
+    .add-product-model{
+        .ant-modal-body{
+            .app-table{
+                padding-left: 140px !important;
+            }
+        }
+    }

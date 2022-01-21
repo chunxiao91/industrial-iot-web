@@ -1,0 +1,73 @@
+@import "./variables.less";
+@import "./mixins.less";
+@import "./custom-ant-overwrite.less";
+@import "./layouts.less";
+@import "./components/index.less";
+@import "./pages/index.less";
+
+/* 禁用 */
+.disabled {
+    color: #c5c5c5 !important;
+    cursor: not-allowed;
+}
+
+/* 链接 */
+.link {
+    font-weight: 400;
+    font-size: 14px;
+    color: @theme-color;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: @theme-color-hover;
+}
+
+/* 共享标签 */
+.share-tag {
+    background-color: #54cc46;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 0 5px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+// 一级标题
+.page_title{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding:20px 10px;
+    border-bottom:1px solid @border-color;
+    background-color: @background-color;
+}
+
+// 二级标题
+.details_title {
+    font-size: 16px;
+    font-weight: 550;
+    padding: 8px;
+}
+
+// 或者 创建一个XXX 的样式
+.create_item_container{
+    display: flex;
+    padding-top:5px;
+    .create_item{
+        padding-left: 5px;
+        color: @theme-color;
+        cursor: pointer;
+    }
+}
+
+iframe{
+    display: none;
+}
+
+// 富文本编辑器
+.ql-editor{
+    min-height: 100px;
+    max-height: 200px;
+}

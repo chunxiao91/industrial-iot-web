@@ -1,0 +1,58 @@
+.ant-layout.ant-layout-has-sider {
+    height: 100%;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    font-family: SourceHanSansSC;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(16, 16, 16);
+}
+
+.ant-select {
+    width: 100%;
+}
+
+/* 弹窗样式 */
+.ant-modal-content {
+    .ant-modal-header {
+        .ant-modal-title {
+            font-weight: 600;
+        }
+    }
+
+    .action-btns {
+        display: flex;
+        justify-content: center;
+
+        .ant-btn {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+// 覆盖左侧侧边栏样式
+.ant-layout-sider {
+    .ant-layout-sider-children {
+        background-color: @sider-background-color;
+
+        .ant-menu {
+            background-color: @sider-background-color;
+        }
+    }
+}
+
+.ant-spin-container {
+    width: 100%;
+    height: 100%;
+}
+
+.ant-collapse-borderless>.ant-collapse-item>.ant-collapse-content {
+    padding-left: 22px;
+}
+
+.ant-layout-sider-children {
+    overflow: auto;
+}
