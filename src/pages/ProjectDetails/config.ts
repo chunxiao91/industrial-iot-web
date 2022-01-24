@@ -1,9 +1,3 @@
-// import ProjectDetailsPage from './ProjectDetailsPage'
-// import ProductsList from './ProductsList'
-// import SceneManage from './SceneManage'
-// import Workflow from './Workflow'
-// import ComponentManage from './ComponentManage'
-// import FieldServiceManage from './FieldServiceManage'
 import Home from './Home'
 // 侧边栏配置
 export const siderConfig = {

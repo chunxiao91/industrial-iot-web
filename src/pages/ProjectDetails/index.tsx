@@ -1,36 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Layout, Spin } from 'antd'
-import { useRecoilState, useRecoilValue } from 'recoil'
 import { queryStringToObj } from '@/utils/util'
 import Sider from './sider'
 import { siderConfig } from './config'
 import findIndex from 'lodash/findIndex'
-
-import { projectDetails, projectEditModalVisible } from '@/store/atom/projectDetails'
-import { projectApi } from '@/api'
 
 const { Content } = Layout
 
 const ProjectDetails = (props: any) => {
     const { history } = props
     const query = queryStringToObj(history)
-    const [projectInfo, setProjectInfo] = useRecoilState<any>(projectDetails)
-    const [loading, setLoading] = useState(false)
-    const projectEditVisible = useRecoilValue(projectEditModalVisible)
-
-    useEffect(() => {
-        if ((query?.projectCode || query?.projectCode === 0) && !projectEditVisible.visible && (projectEditVisible.closetype === 'ok' || projectEditVisible.closetype === '')) {
-            setLoading(true)
-            projectApi.getpeojectInfo({}, { projectCode: query?.projectCode }).then((res: any) => {
-                if (res.code === '0') {
-                    setProjectInfo(res.data)
-                }
-                setLoading(false)
-            }).catch(() => {
-                setLoading(false)
-            })
-        }
-    }, [query?.projectCode, projectEditVisible])
+    const loading = false
 
     let defaultPage
     if (query.menukey === '0') {
@@ -54,7 +34,6 @@ const ProjectDetails = (props: any) => {
         <Layout>
             <Spin spinning={loading} wrapperClassName="projectDetails-layout-loading">
                 <Sider
-                    projectName={projectInfo?.projectName}
                     query={query}
                     onMenuChange={onMenuChange}
                 />

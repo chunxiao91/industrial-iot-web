@@ -9,6 +9,7 @@ const MainLayout = (props: any) => {
     return <Layout className="layout">
         <Header className="header">
             <span className="header-item">
+                <span className="header-logo" />
                 <span className="header-title">工业物联网智能化生产线访问控制系统</span>
             </span>
             <span className="header-item">
