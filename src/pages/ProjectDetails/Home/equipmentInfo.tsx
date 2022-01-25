@@ -1,5 +1,5 @@
 import React from 'react'
-import { Progress, Statistic } from 'antd';
+import { Progress } from 'antd';
 import { equipmentInfo } from './config';
 import _ from 'lodash'
 
@@ -27,7 +27,7 @@ const EquipmentInfo = () => {
                     }
                 </div>
             </div>
-            <div className="online_info">
+            {/* <div className="online_info">
                 <div className="home_title">
                     用户在线时长与阈值
                 </div>
@@ -36,7 +36,7 @@ const EquipmentInfo = () => {
                     <Statistic title="权限时长阈值" value={20} suffix="/h" />
                 </div>
 
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -65,8 +65,8 @@
         display: flex;
         flex-direction: row;
         .equipment_info{
-            width: 1354px;
-            border:1px solid beige;
+            // width: 1354px;
+            // border:1px solid beige;
             display: flex;
             flex-direction: column;
             .inner_div{
@@ -74,7 +74,7 @@
                 flex-direction: row;
                 .inner_Info{
                     display:flex;
-                    margin: 15px 0px 20px 20px;
+                    margin: 15px 0px 20px 60px;
                     .info{
                         padding-top: 5px;
                         padding-left: 5px;
@@ -87,16 +87,6 @@
                 }
             }
         }
-        .online_info{
-            .time {
-                display: flex;
-                flex-direction: row;
-                .ant-statistic{
-                    padding: 10px 30px 0px 30px;
-                }
-            }
-        }
-
     }
     .part_three{
         height: 300px;
@@ -107,14 +97,14 @@
             .user_charts{
                 display: flex;
                 .chart-content2{
-                    padding-left: 50px;
+                    padding-left: 60px;
                 }
             }
             .user_info{
                 width: 300px;
                 height: 300px;
-                margin-left: 34px;
-                border-left: 1px solid #f0f2f5;
+                margin-left: 60px;
+                border-left: 3px solid #f0f2f5;
                 .content{
                     padding:15px 60px;
                     .detail{
@@ -150,7 +140,7 @@
             .details_info{
                 display:flex;
                 .product_info{
-                    width:600px;
+                    width:480px;
                     .product_info_image{ 
                         background-image:url('/assets/images/product_info_image.png');
                         width: 485px;
@@ -158,14 +148,24 @@
                         transform: scale(0.8);
                         position: relative;
                         top: -10px;
-                        left: 50px;
                     }
                 }       
                 .product_chart{
-                    width: 500px;
-                    border-left: 3px solid #f0f2f5;
+                    width: 402px;
+                    border-left: 1px solid #f0f2f5;
+                    border-right: 3px solid #f0f2f5;
                     .chart{
+                        margin-left: -25px;
+                    }
+                }
+                .online_info{
+                    .time {
+                        display: flex;
+                        flex-direction: column;
                         padding-left: 30px;
+                        .ant-statistic{
+                            padding: 10px 30px 0px 30px;
+                        }
                     }
                 }
             }   
