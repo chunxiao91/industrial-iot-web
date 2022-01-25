@@ -31,8 +31,58 @@ export const equipmentInfo = [
         number: 10,
     },
     {
-        title: 'PDFOID阅读器',
+        title: 'RFID阅读器',
         percent: 27,
         number: 10,
     },
 ]
+
+export const dataSource = [
+    {
+        key: '1',
+        name: '运行状态信息',
+        age: 2350,
+        address: 33730,
+    },
+    {
+        key: '2',
+        name: '视频图像信息',
+        age: 65,
+        address: 770,
+    },
+    {
+        key: '3',
+        name: '通讯状态信息',
+        age: 180,
+        address: 2850,
+    },
+    {
+        key: '4',
+        name: '故障报警信息',
+        age: 5,
+        address: 75,
+    },
+];
+
+export const columns = [
+    {
+        title: '运行信息',
+        dataIndex: 'name',
+        key: 'name',
+        width: 200
+    },
+    {
+        title: '当日',
+        dataIndex: 'age',
+        key: 'age',
+        width: 200
+
+    },
+    {
+        title: '总计',
+        dataIndex: 'address',
+        key: 'address',
+        width: 200
+
+    },
+];

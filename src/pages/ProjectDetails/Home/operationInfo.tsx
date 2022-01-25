@@ -4,88 +4,37 @@
  * @date 2021-05-25 14:17
  */
 import React from 'react'
-import { Progress } from 'antd';
+import { Table } from 'antd'
+import ProductInfo from './productInfo'
+import { dataSource, columns } from './config'
 
-const EnterpriseInfo = (props: any) => {
-    const { data = {}} = props
-    const totalNum = data.total
+const OperationInfo = (props: any) => {
 
-    return <div className="enterprise-info">
-        <div className="home-page-title">
-            <div className="blue-line"></div>
-            <div className="title-name">企业库<span>({totalNum})</span></div>
+
+    return <div className="part_four">
+        <div className="operation_info">
+            <Table pagination={false} dataSource={dataSource} columns={columns} />
         </div>
-        <div className="home-page-content">
-            <div className="link-click-hover">
-                建设单位
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={data.jsdw / totalNum * 100}
-                    format={(percent) => data.jsdw}
-                />
+        <div className="storage_info">
+            {/* <div className="home_title">
+                    仓储信息               生产原料信息
+            </div> */}
+            <div className="details_info">
+                <div className="product_info">
+                    <div className="home_title">
+                        生产原料信息
+                    </div>
+                    <div className="product_info_image"></div>
+                </div>
+                <div className="product_chart">
+                    <div className="home_title">
+                        成品信息
+                    </div>
+                    <ProductInfo/>
+                </div>
             </div>
-            <div className="link-click-hover">
-                设计单位
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={data.sjdw / totalNum * 100}
-                    format={(percent) => data.sjdw}
-                />
-            </div>
-            <div className="link-click-hover" >
-                施工单位
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={data.sgdw / totalNum * 100}
-                    format={(percent) => data.sgdw}
-                />
-            </div>
-            <div className="link-click-hover">
-                勘察单位
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={data.kcdw / totalNum * 100}
-                    format={(percent) => data.kcdw}
-                />
-            </div>
-            <div className="link-click-hover">
-                监理单位
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={data.jldw / totalNum * 100}
-                    format={(percent) => data.jldw}
-                />
-            </div>
-            <div className="link-click-hover">
-                检测单位
-                <Progress
-                    strokeColor={{
-                        '0%': '#108ee9',
-                        '100%': '#87d068',
-                    }}
-                    percent={data.jcdw / totalNum * 100}
-                    format={(percent) => data.jcdw}
-                />
-            </div>
-
-
         </div>
     </div>
 }
 
-export default EnterpriseInfo
+export default OperationInfo

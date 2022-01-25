@@ -3,6 +3,7 @@ import { Layout } from 'antd'
 import ProductTask from './productTask'
 import EquipmentInfo from './equipmentInfo'
 import AccessManage from './accessManagement/index'
+import OperationInfo from './operationInfo'
 const { Content } = Layout
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
                 <ProductTask/>
                 <EquipmentInfo/>
                 <AccessManage/>
-                <div className="part_four">运行信息</div>
+                <OperationInfo/>
             </Content>
         </Layout>
     )
