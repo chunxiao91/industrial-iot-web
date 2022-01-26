@@ -27,16 +27,6 @@ const EquipmentInfo = () => {
                     }
                 </div>
             </div>
-            {/* <div className="online_info">
-                <div className="home_title">
-                    用户在线时长与阈值
-                </div>
-                <div className="time">
-                    <Statistic title="已在线时长" value={16} suffix="/h" />
-                    <Statistic title="权限时长阈值" value={20} suffix="/h" />
-                </div>
-
-            </div> */}
         </div>
     )
 }

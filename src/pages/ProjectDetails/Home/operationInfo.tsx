@@ -37,8 +37,8 @@ const OperationInfo = (props: any) => {
                         用户在线时长与阈值
                     </div>
                     <div className="time">
-                        <Statistic title="已在线时长" value={16} suffix="/h" />
-                        <Statistic title="权限时长阈值" value={20} suffix="/h" />
+                        <Statistic title="已在线时长" value={16} suffix="/min" />
+                        <Statistic title="权限时长阈值" value={30} suffix="/min" />
                     </div>
 
                 </div>
