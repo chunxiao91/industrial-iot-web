@@ -32,7 +32,7 @@ const AccessTimeChart = () => {
             let res = [];
             let len = 10;
             while (len--) {
-                res.push(Math.round(Math.random() * 1000));
+                res.push(Math.round(Math.random() * 1000)); // Math.round 四舍五入取整数
             }
             return res;
         })();
@@ -40,7 +40,7 @@ const AccessTimeChart = () => {
             let res = [];
             let len = 0;
             while (len < 10) {
-                res.push((Math.random() * 10 + 5).toFixed(1));
+                res.push((Math.random() * 10 + 5).toFixed(0)); // toFixed(0) 小数位数
                 len++;
             }
             return res;

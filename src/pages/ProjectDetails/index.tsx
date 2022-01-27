@@ -14,7 +14,7 @@ const ProjectDetails = (props: any) => {
 
     let defaultPage
     if (query.menukey === '0') {
-        defaultPage = siderConfig.project
+        defaultPage = siderConfig.home
     } else {
         const i = findIndex(siderConfig.menu, (m: any) => (m.key === query.menukey))
         if (i > -1) {

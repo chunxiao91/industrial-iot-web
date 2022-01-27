@@ -1,7 +1,10 @@
 import Home from './Home'
+import AccessManage from './AccessManage'
+import PersonAccess from './PersonAccess'
+
 // 侧边栏配置
 export const siderConfig = {
-    project: {
+    home: {
         key: 'home',
         title: '首页',
         icon: 'WalletFilled',
@@ -53,41 +56,22 @@ export const siderConfig = {
     }],
     menu3: [{
         key: 'menu3_1',
-        title: '权限时长阈值',
-        pageTitle: '项目关联的所有产品',
+        title: '人员管理',
+        pageTitle: '人员管理',
         icon: 'ProfileOutlined',
-        // component: ProductsList,
+        component: PersonAccess,
     }, {
         key: 'menu3_2',
-        title: '敏感信息阈值',
+        title: '权限管理',
+        pageTitle: '场景列表',
+        icon: 'CodepenOutlined',
+        component: AccessManage,
+    }, {
+        key: 'menu3_3',
+        title: '阈值设定',
         pageTitle: '场景列表',
         icon: 'CodepenOutlined',
         // component: SceneManage,
-    }],
-    menu4: [{
-        key: 'menu4_1',
-        title: '用户信息',
-        pageTitle: '项目关联的所有产品',
-        icon: 'ProfileOutlined',
-        // component: ProductsList,
-    }, {
-        key: 'menu4_2',
-        title: '角色属性',
-        pageTitle: '场景列表',
-        icon: 'CodepenOutlined',
-        // component: SceneManage,
-    }, {
-        key: 'menu4_3',
-        title: '权限属性',
-        pageTitle: '业务流程列表',
-        icon: 'BranchesOutlined',
-        // component: Workflow,
-    }, {
-        key: 'menu4_4',
-        title: '任务属性',
-        pageTitle: '业务流程列表',
-        icon: 'BranchesOutlined',
-        // component: Workflow,
     }],
 }
 

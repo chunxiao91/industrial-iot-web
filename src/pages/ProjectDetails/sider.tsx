@@ -23,7 +23,7 @@ const CustomSider = (props: IProps) => {
         setUrl(e.key)
     }
 
-    const project = siderConfig.project
+    const project = siderConfig.home
 
     return (
         <Sider className="projectDetails-sider" theme="light">
@@ -52,17 +52,8 @@ const CustomSider = (props: IProps) => {
                         >{m.title}</Menu.Item>
                     ))}
                 </SubMenu>
-                <SubMenu key="sub3" icon={<Icon type={'LaptopOutlined'} />} title="访问管理">
+                <SubMenu key="sub3" icon={<Icon type={'LaptopOutlined'} />} title="访问控制">
                     {siderConfig.menu3.map((m) => (
-                        <Menu.Item
-                            key={m.key}
-                            icon={<Icon type={m.icon} />}
-                            onClick={(e) => onMenuItemClick(e, m)}
-                        >{m.title}</Menu.Item>
-                    ))}
-                </SubMenu>
-                <SubMenu key="sub4" icon={<Icon type={'LaptopOutlined'} />} title="角色与权限管理">
-                    {siderConfig.menu4.map((m) => (
                         <Menu.Item
                             key={m.key}
                             icon={<Icon type={m.icon} />}

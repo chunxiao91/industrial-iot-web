@@ -8,7 +8,7 @@ const AccessManage = () => {
         <div className="part_three">
             <div className="home_content">
                 <div>
-                    <div className="home_title">访问控制管理</div>
+                    <div className="home_title">访问控制</div>
                     <div className="user_charts">
                         <AccessManageChart />
                         <AccessNumChart />
